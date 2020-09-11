@@ -1,0 +1,386 @@
+@font-face {
+  font-family: "simplifica";
+  src: url("../fonts/simplifica.ttf");
+}
+body {
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #003847;
+  width: 100%;
+  position: fixed;
+}
+
+.logo {
+  display: flex;
+  padding-top: 10px;
+}
+
+.logo p {
+  color: white;
+  font-family: "simplifica";
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5;
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+a {
+  font-family: helvetica;
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+#home_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  background-image: url("../../../red.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro h1 {
+  font-family: helvetica;
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 100px;
+}
+
+.intro h2 {
+  font-family: helvetica;
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  text-align: left;
+  padding: 140px 0 0 100px;
+}
+
+.intro p {
+  font-size: 14px;
+  width: 30%;
+  font-family: verdana;
+  line-height: 1.5em;
+  padding: 0 0 250px 100px;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  margin: 40px 26px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 30px 50px;
+  height: 500px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  text-align: center;
+  width: 90%;
+}
+
+h2 {
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: helvetica;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 14px;
+  font-family: verdana;
+  line-height: 1.5em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #003847;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.icons {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p {
+  font-family: helvetica;
+  font-size: 14px;
+  color: white;
+  padding: 0 0 40px 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about {
+  text-align: left;
+  padding: 130px 0 20px 100px;
+  width: 40%;
+  font-family: verdana;
+}
+
+.contact {
+  text-align: left;
+  padding: 130px 0 20px 100px;
+  width: 40%;
+  font-family: verdana;
+}
+
+.contact p {
+  padding-bottom: 20px;
+}
+
+.form {
+  padding: 150px 0 50px;
+}
+
+fieldset {
+  border: none;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+legend {
+  font-family: verdana;
+  font-weight: bold;
+}
+
+input[name=name] {
+  background-color: #f2f2f2;
+  border: none;
+  height: 30px;
+  width: 200px;
+  margin: 20px 0 0 20px;
+  padding-left: 10px;
+}
+
+input[type=email] {
+  background-color: #f2f2f2;
+  border: none;
+  height: 30px;
+  width: 200px;
+  margin: 20px 0 0 20px;
+  padding-left: 10px;
+}
+
+input[name=phone_number] {
+  background-color: #f2f2f2;
+  border: none;
+  height: 30px;
+  width: 430px;
+  margin: 20px 0 0 20px;
+  padding-left: 10px;
+}
+
+textarea {
+  background-color: #003847;
+}
+
+input[name=submit] {
+  background-color: #003847;
+  color: white;
+  font-family: verdana;
+  font-size: 14px;
+  padding: 10px;
+  width: 100px;
+  margin: 20px 20px 20px;
+}
+
+#button {
+  background-color: #003847;
+  color: white;
+  font-family: verdana;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 20px;
+  width: 150px;
+  margin: 0 0 120px;
+  align-self: center;
+  text-align: center;
+}
+
+.tours_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
+  margin: 70px 20px 50px 20px;
+  height: 500px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 70px 70px 120px;
+}
+
+.tours_card p {
+  margin-bottom: 50px;
+}
+
+main img {
+  width: 400px;
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
+  nav {
+    width: auto;
+    padding: 0;
+  }
+
+  a {
+    padding: 10px 25p;
+  }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    background: none;
+    padding-top: 40px;
+  }
+
+  .intro h1 {
+    padding: 0 0 10px 0;
+  }
+
+  .intro h2 {
+    padding: 150px 0 0 0;
+  }
+
+  .intro p {
+    text-align: center;
+    padding: 0 0 10px;
+    width: 50%;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+
+  .card {
+    padding-top: 30px;
+  }
+
+  footer {
+    width: auto;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding-bottom: 20px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact {
+    margin: 0 auto;
+    width: 70%;
+    padding: 150px 0 50px 50px;
+  }
+
+  .form {
+    padding: 0 0 50px;
+  }
+
+  input[name=name] {
+    width: 80%;
+  }
+
+  input[type=email] {
+    width: 80%;
+  }
+
+  input[name=phone_number] {
+    width: 80%;
+  }
+
+  textarea {
+    width: 80%;
+  }
+
+  .tours_main {
+    padding-top: 90px;
+    align-items: center;
+  }
+
+  .tours_card {
+    padding: 30px 0;
+    width: 97%;
+    margin: 20px auto;
+  }
+
+  .tours_card p {
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .extra_margin_top {
+    margin-top: 200px;
+  }
+
+  .about {
+    padding: 170px 0 20px 0px;
+    width: 80%;
+  }
+
+  main img {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
